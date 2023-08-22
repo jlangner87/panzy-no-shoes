@@ -1,0 +1,25 @@
+* {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("../assets/pns-backsplash.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.section {
+  height: 100vh;
+  margin: 0 auto 50vh auto;
+  padding: 20px;
+  background-color: #1B1212;
+  color: #FBFCF8;
+}
+
+.section h1 {
+  color:  #FF3990;
+  text-transform: uppercase;
+}
