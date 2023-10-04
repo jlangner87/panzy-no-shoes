@@ -1,6 +1,17 @@
+@font-face {
+  font-family: drugs;
+  src: url("../assets/Drugs.otf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../assets/Poppins-Light.ttf");
+}
+
 * {
   text-align: center;
   margin: 0 auto;
+  color: #FBFCF8;
 }
 
 body {
@@ -11,15 +22,62 @@ body {
   background-size: cover;
 }
 
-.section {
-  height: 100vh;
+.header {
+  height: 95vh;
   margin: 0 auto 50vh auto;
   padding: 20px;
   background-color: #1B1212;
-  color: #FBFCF8;
+}
+
+.header h1 {
+  color:  #FF3990;
+  text-shadow: rgba(255,255,255,0.9) 1px 0px 15px;
+  text-transform: uppercase;
+  font-family: drugs;
+  font-size: 72px;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.section {
+  height: fit-content;
+  margin: 0 auto 50vh auto;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: rgb(27, 18, 18, .9);
 }
 
 .section h1 {
   color:  #FF3990;
+  text-shadow: rgba(255,255,255,0.9) 1px 0px 10px;
   text-transform: uppercase;
+  font-family: drugs;
+  font-size: 64px;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.section h2 {
+  color:  #FF3990;
+  text-shadow: rgba(255,255,255,0.9) 1px 0px 8px;
+  text-transform: uppercase;
+  font-family: drugs;
+  font-size: 36px;
+  font-weight: 200;
+  padding: 20px;
+}
+.content-block {
+  width: 75%;
+  margin: 40px auto;
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+
+.footer {
+  height: 10vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1B1212;
 }
