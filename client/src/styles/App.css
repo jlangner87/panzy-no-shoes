@@ -1,11 +1,40 @@
-@font-face {
-  font-family: drugs;
-  src: url("../assets/Drugs.otf");
+/* @font-face {
+  font-family: lato;
+  src: url("../assets/lato-Regular.ttf");
 }
 
 @font-face {
-  font-family: poppins;
-  src: url("../assets/Poppins-Light.ttf");
+  font-family: roboto;
+  src: url("../assets/Roboto-Light.ttf");
+} */
+
+@font-face {
+  font-family: lustria;
+  src: url('../assets/Lustria-Regular.ttf');
+}
+
+@font-face {
+  font-family: lato;
+  src: url('../assets/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: sacramento;
+  src: url('../assets/Sacramento-Regular.ttf');
+}
+
+@font-face {
+  font-family: allison;
+  src: url('../assets/Allison-Regular.ttf');
+}
+@font-face {
+  font-family: grand;
+  src: url('../assets/GrandifloraOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: signature;
+  src: url('../assets/Signature\ United.woff');
 }
 
 * {
@@ -26,50 +55,76 @@ body {
   height: 95vh;
   margin: 0 auto 50vh auto;
   padding: 20px;
-  background-color: #1B1212;
+  background-color: rgb(27, 18, 18, .9);
+  font-family: lato;
 }
 
 .header h1 {
-  color:  #FF3990;
-  text-shadow: rgba(255,255,255,0.9) 1px 0px 15px;
-  text-transform: uppercase;
-  font-family: drugs;
-  font-size: 72px;
+  /* color:  #FF3990; */
+  /* color: #2ff9c3; */
+  color: #15F7F7;
+  /* color: rgb(246, 246, 117); */
+  text-shadow: rgba(255,255,255,0.5) .5px .5px 30px;
+  letter-spacing: 3px;
+  font-family: signature;
+  font-size: 204px;
   font-weight: 200;
   padding: 20px;
+  margin-top: 25%;
+}
+
+.header h2 {
+  font-family: grand;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: rgba(255,255,255,.9) 1px 1px 20px;
+  font-size: 25px;
+  margin-top: -100px;
+  margin-right: -275px;
 }
 
 .section {
   height: fit-content;
-  margin: 0 auto 50vh auto;
+  margin: 0 auto 60vh auto;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: rgb(27, 18, 18, .9);
 }
 
 .section h1 {
-  color:  #FF3990;
-  text-shadow: rgba(255,255,255,0.9) 1px 0px 10px;
+  color: #15F7F7;
+  /* color: rgb(246, 246, 117); */
+  text-shadow: rgba(255,255,255,0.5) .5px .5px 30px;
+  letter-spacing: 3px;
+  font-family: signature;
+  font-size: 164px;
+  font-weight: 200;
+  padding: 20px;
+  margin-bottom: -75px;
+}
+
+.flourish {
+  width: 50%;
+  margin-bottom: -50px;
+}
+.section h2 {
+  color: #15F7F7;
+  font-family: grand;
   text-transform: uppercase;
-  font-family: drugs;
-  font-size: 64px;
+  text-shadow: rgba(255,255,255,.9) 1px 1px 20px;
+  font-size: 25px;
   font-weight: 200;
   padding: 20px;
 }
 
-.section h2 {
-  color:  #FF3990;
-  text-shadow: rgba(255,255,255,0.9) 1px 0px 8px;
-  text-transform: uppercase;
-  font-family: drugs;
-  font-size: 36px;
-  font-weight: 200;
-  padding: 20px;
-}
 .content-block {
   width: 75%;
   margin: 40px auto;
-  font-family: poppins;
+}
+
+.content-block p {
+  font-family: lato;
+  text-shadow: rgb(255, 57, 144) 1px 1px 50px;
   font-size: 20px;
   line-height: 150%;
 }
