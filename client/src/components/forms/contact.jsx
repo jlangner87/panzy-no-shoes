@@ -8,6 +8,8 @@ function ContactForm () {
         <label htmlFor="lname"> Last Name</label>
         <input type="text" name="lname" id="lname" value={"Sample State"} placeholder="Last Name"/>
         <br/>
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" id="email" value={"Sample State"} placeholder="Email" />
         <label htmlFor="subject">Subject</label>
         <select name="subject" id="subject">
           <option value="">Previous Order Questions</option>

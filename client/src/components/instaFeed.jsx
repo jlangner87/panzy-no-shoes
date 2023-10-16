@@ -1,36 +1,34 @@
-import React, { useState, useEffect, useRef } from 'react'
-import axios from 'axios'
+import ph1 from "../assets/placeholder1.png"
+import ph2 from "../assets/placeholder2.png"
+import ph3 from "../assets/placeholder3.png"
+import ph4 from "../assets/placeholder4.png"
 
-const InstaFeeds = ({token, ...props}) => {
-    const [feeds, setFeedsData] = useState([])
-    const tokenProp = useRef(token);
-    tokenProp.current = token;
-
-    useEffect(() => {
-
-        async function fetchInstagramPost () {
-          try{
-            axios
-                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
-                .then((resp) => {
-                    setFeedsData(resp.data.data)
-                })
-          } catch (err) {
-              console.log('error', err)
-          }
-        }
-        
-        fetchInstagramPost();
-  
-    }, [props.limit])
-
+const InstaFeed = () => {
     return (
-        <div className="container">
-            {feeds.map((feed) => (
-                <feed key={feed.id} feed={feed} />
-            ))}
+        <div className="gallery">
+            <h2>Browse our Creations</h2>
+            <div className="card-container">
+            <div className="gallery-card">
+                <img src={ph1} alt="bath bomb sample image" className="gallery-img"/>
+                <p>This is a brief description of the product pulled from IG. It will reflect the caption exactly...</p>
+            </div>
+            <div className="gallery-card">
+                <img src={ph2} alt="bath bomb sample image" className="gallery-img"/>
+                <p>This is a brief description of the product pulled from IG. It will reflect the caption exactly...</p>
+            </div>
+            <div className="gallery-card">
+                <img src={ph3} alt="bath bomb sample image" className="gallery-img"/>
+                <p>This is a brief description of the product pulled from IG. It will reflect the caption exactly...</p>
+            </div>
+            <div className="gallery-card">
+                <img src={ph4} alt="bath bomb sample image" className="gallery-img"/>
+                <p>This is a brief description of the product pulled from IG. It will reflect the caption exactly...</p>
+            </div>
+            </div>
+
+            
         </div>
     );
 }
 
-export default InstaFeeds;
+export default InstaFeed;
