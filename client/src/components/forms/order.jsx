@@ -1,3 +1,7 @@
+import bbomb from "./formAssets/bbomb.png"
+import sscrub from "./formAssets/sscrub.png"
+import sguide from "./formAssets/sguide.png"
+
 function OrderForm () {
   return (
     <div className="order-form">
@@ -12,6 +16,7 @@ function OrderForm () {
         <br/>
         <div className="order-item-container">
           <div className="order-item">
+            <img className="preview-img" src={bbomb}/>
             <h3>Bath Bombs</h3>
             <label className="testing123" htmlFor="subject">Size</label>
             <select name="subject" id="subject">
@@ -22,15 +27,51 @@ function OrderForm () {
             </select>
             <br/>
             <label htmlFor="subject">Fragrance</label>
-            <select name="subject" id="subject">
+            <legend>Select up to 3 fragrances for your bombs</legend>
+            <fieldset>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag1" />
+                <label htmlFor="lavender">Lavender</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag2" />
+                <label htmlFor="lavender">Juniper</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag3" />
+                <label htmlFor="lavender">Eucalyptus</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag4" />
+                <label htmlFor="lavender">Lemongrass</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag15" />
+                <label htmlFor="lavender">Rose</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag15" />
+                <label htmlFor="lavender">Lemon</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag15" />
+                <label htmlFor="lavender">Grapefruit</label>
+              </div>
+              <div className="fragrance-box">
+                <input className="checkbox" type="checkbox" id="frag15" />
+                <label htmlFor="lavender">Vanilla</label>
+              </div>
+            </fieldset>
+
+            {/* <select name="subject" id="subject">
               <option value="">Lavender</option>
-              <option value="">Geranium</option>
-              <option value="">Lemon Berry</option>
-              <option value="">Eucalyptus</option>
               <option value="">Peppermint</option>
-              <option value="">Garlic</option>
-              <option value="">NA (Soul Guide)</option>
-            </select>
+              <option value="">Rose</option>
+              <option value="">Lemon</option>
+              <option value="">Eucalyptus</option>
+              <option value="">Lemon + Eucalyptus</option>
+              <option value="">Lavender + Peppermint</option>
+            </select> */}
             <br/>
             <label htmlFor="subject">Quantity</label>
             <select name="subject" id="subject">
@@ -47,6 +88,7 @@ function OrderForm () {
             </select>
           </div>
           <div className="order-item">
+          <img className="preview-img" src={sscrub}/>
           <h3>Sugar Scrubs</h3>
             <label htmlFor="subject">Size</label>
             <select name="subject" id="subject">
@@ -82,7 +124,8 @@ function OrderForm () {
             </select>
           </div>
           <div className="order-item">
-          <h3>Spirit Guide</h3>
+          <img className="preview-img" src={sguide}/>
+          <h3>Soul Guide</h3>
             <label htmlFor="month">Birth Month</label>
             <select name="month" id="month">
               <option value="January">January</option>
