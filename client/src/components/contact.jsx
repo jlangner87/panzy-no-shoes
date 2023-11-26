@@ -6,9 +6,12 @@ import OrderForm from './forms/order'
 
 function Contact () {
   return (
-    <div className="section">
+    <div className="section2" id='contact'>
       <h1>Get in Touch</h1>
       <img className="flourish" src={flourish}/>
+      <div className='content-block'>
+        <OrderForm/>
+      </div>
       <div className='content-block'>
         <ContactForm/>
       </div>
@@ -31,9 +34,6 @@ function Contact () {
           </div>
         </div>
       </div>
-      <div className='content-block'>
-          <OrderForm/>
-        </div>
     </div>
   )
 }

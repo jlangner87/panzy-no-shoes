@@ -1,4 +1,5 @@
 import './styles/App.css'
+import './styles/mobile.css'
 import { BrowserRouter } from 'react-router-dom'
 import Header from './components/header'
 import About from './components/about'
