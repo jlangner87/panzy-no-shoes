@@ -10,6 +10,7 @@ import priceSugar from "../assets/pricing-sugar.png"
 import priceBomb from "../assets/pricing-bomb.png"
 import priceShareBox from "../assets/pricing-sharebox.png"
 import priceSampleBox from "../assets/pricing-samplebox.png"
+import warning from "../assets/warning.png"
 
 function Gallery () {
   return (
@@ -69,6 +70,7 @@ function Gallery () {
       <div className="content-block">
         <div className='instagram-display'>
           <InstaFeeds/>
+          <img src={warning} alt="" className="warning"/>
         </div>
       </div>
       <a href="#contact" smooth className="nav-link">Keep scrolling to see it all...<img  className="nav-img" src={downArrow} alt="chevron pointing down" /></a>            

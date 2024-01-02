@@ -1,77 +1,56 @@
 import bbomb from "./formAssets/bbomb.png"
 import sscrub from "./formAssets/sscrub.png"
 import sguide from "./formAssets/sguide.png"
+import lotion from "./formAssets/lotion.png"
+import sampleBox from "./formAssets/sample.png"
+import shareBox from "./formAssets/share.png"
 
 function OrderForm () {
   return (
     <div className="order-form">
       <form action="submit">
         <h2>Place an Order</h2>
+        <h3>Your Information</h3>
         <label htmlFor="fname"> First Name</label>
         <input type="text" name="fname" id="fname" value={"Sample State"} placeholder="First Name"/>
         <label htmlFor="lname"> Last Name</label>
         <input type="text" name="lname" id="lname" value={"Sample State"} placeholder="Last Name"/>
         <label htmlFor="lname"> Email</label>
         <input type="text" name="email" id="email" value={"Sample State"} placeholder="Email Address"/>
+        <label htmlFor="fname"> Street Address</label>
+        <input type="text" name="fname" id="fname" value={"Sample State"} placeholder="First Name"/>
+        <div className="address-bar">
+          <div className="address-element">
+            <label htmlFor="fname"> City</label>
+            <br />
+            <input type="text" name="fname" id="fname" value={"Sample State"} placeholder="First Name"/>
+          </div>
+          <div className="address-element">
+            <label htmlFor="lname"> State</label>
+            <br />
+            <input type="text" name="lname" id="lname" value={"Sample State"} placeholder="Last Name"/>
+          </div>
+          <div className="address-element">
+            <label htmlFor="lname"> Zip</label>
+            <br />
+            <input type="text" name="lname" id="lname" value={"Sample State"} placeholder="Last Name"/>
+          </div>
+        </div>
         <br/>
+        <h3>Choose Your Escape</h3>
         <div className="order-item-container">
           <div className="order-item">
             <img className="preview-img" src={bbomb}/>
             <h3>Bath Bombs</h3>
+            <br />
             <label className="testing123" htmlFor="subject">Size</label>
             <select name="subject" id="subject">
               <option value="3.5 oz">3.5 oz</option>
               <option value="7 oz">7 oz</option>
               <option value="14 oz">14 oz</option>
-              <option value="">NA (Soul Guide)</option>
             </select>
             <br/>
             <label htmlFor="subject">Fragrance</label>
-            <legend>Select up to 3 fragrances for your bombs</legend>
-            <fieldset>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag1" />
-                <label htmlFor="lavender">Lavender</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag2" />
-                <label htmlFor="lavender">Juniper</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag3" />
-                <label htmlFor="lavender">Eucalyptus</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag4" />
-                <label htmlFor="lavender">Lemongrass</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag15" />
-                <label htmlFor="lavender">Rose</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag15" />
-                <label htmlFor="lavender">Lemon</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag15" />
-                <label htmlFor="lavender">Grapefruit</label>
-              </div>
-              <div className="fragrance-box">
-                <input className="checkbox" type="checkbox" id="frag15" />
-                <label htmlFor="lavender">Vanilla</label>
-              </div>
-            </fieldset>
-
-            {/* <select name="subject" id="subject">
-              <option value="">Lavender</option>
-              <option value="">Peppermint</option>
-              <option value="">Rose</option>
-              <option value="">Lemon</option>
-              <option value="">Eucalyptus</option>
-              <option value="">Lemon + Eucalyptus</option>
-              <option value="">Lavender + Peppermint</option>
-            </select> */}
             <br/>
             <label htmlFor="subject">Quantity</label>
             <select name="subject" id="subject">
@@ -89,13 +68,12 @@ function OrderForm () {
           </div>
           <div className="order-item">
           <img className="preview-img" src={sscrub}/>
-          <h3>Sugar Scrubs</h3>
+          <h3>Sugar Scrubs</h3> <br />
             <label htmlFor="subject">Size</label>
             <select name="subject" id="subject">
               <option value="3.5 oz">3.5 oz</option>
               <option value="7 oz">7 oz</option>
               <option value="14 oz">14 oz</option>
-              <option value="">NA (Soul Guide)</option>
             </select>
             <br/>
             <label htmlFor="subject">Fragrance</label>
@@ -105,8 +83,6 @@ function OrderForm () {
               <option value="">Lemon Berry</option>
               <option value="">Eucalyptus</option>
               <option value="">Peppermint</option>
-              <option value="">Garlic</option>
-              <option value="">NA (Soul Guide)</option>
             </select>
             <br/>
             <label htmlFor="subject">Quantity</label>
@@ -124,8 +100,77 @@ function OrderForm () {
             </select>
           </div>
           <div className="order-item">
+          <img className="preview-img" src={lotion}/>
+          <h3>Lotions</h3> <br />
+            <label htmlFor="subject">Size</label>
+            <select name="subject" id="subject">
+              <option value="3.5 oz">3.5 oz</option>
+              <option value="7 oz">7 oz</option>
+              <option value="14 oz">14 oz</option>
+            </select>
+            <br/>
+            <label htmlFor="subject">Fragrance</label>
+            <select name="subject" id="subject">
+              <option value="">Lavender</option>
+              <option value="">Geranium</option>
+              <option value="">Lemon Berry</option>
+              <option value="">Eucalyptus</option>
+              <option value="">Peppermint</option>
+            </select>
+            <br/>
+            <label htmlFor="subject">Quantity</label>
+            <select name="subject" id="subject">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <div className="order-item">
+          <img className="preview-img" src={sampleBox}/>
+          <h3>Sample Box</h3>
+            <br/>
+            <label htmlFor="subject">Quantity</label>
+            <select name="subject" id="subject">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <div className="order-item">
+          <img className="preview-img" src={shareBox}/>
+          <h3>Get 1 / Give 1</h3> <br />
+            <br/>
+            <label htmlFor="subject">Quantity</label>
+            <select name="subject" id="subject">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <div className="order-item">
           <img className="preview-img" src={sguide}/>
-          <h3>Soul Guide</h3>
+          <h3>Soul Guide</h3> <br />
             <label htmlFor="month">Birth Month</label>
             <select name="month" id="month">
               <option value="January">January</option>

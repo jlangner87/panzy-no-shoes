@@ -258,6 +258,11 @@ body {
   width: 85%;
 }
 
+.warning {
+  width: 33%;
+  margin: 100px auto -40px auto;
+}
+
 .order-item {
   color: #1B1212;
   background-color: rgb(241, 246, 247);
@@ -285,6 +290,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 12px;
+}
+
+.address-bar {
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0px auto;
 }
 
 legend {
@@ -327,6 +340,10 @@ form:hover{
   -webkit-box-shadow:0px 0px 155px 62px rgba(21,247,247,0.15);
   -moz-box-shadow: 0px 0px 155px 62px rgba(21,247,247,0.15);
   box-shadow: 0px 0px 155px 62px rgba(21,247,247,0.15);
+}
+
+form h3 {
+  margin: 50px auto 20px auto;
 }
 
 input {
